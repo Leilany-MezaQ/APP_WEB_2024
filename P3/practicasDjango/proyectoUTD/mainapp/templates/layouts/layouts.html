@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% comment %} Aqui va el bloque del title {% endcomment %}
+        {% endblock title %}
+    </title>
+    
+</head>
+<body>
+    
+    <h1>ESTOY EN LA PAGINA DE INICIO</h1>
+    <h2>Bienvenido a mi pagina con django</h2>
+
+    {% block content %}
+        {% comment %} Aqui va el contenido de cada página {% endcomment %}
+    {% endblock content %}
+    
+</body>
+</html>
